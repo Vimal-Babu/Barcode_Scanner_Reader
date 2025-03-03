@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Barcode</title>
+</head>
+<body>
+    <h2>Upload Barcode Image</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Scan Barcode</button>
+    </form>
+</body>
+</html>

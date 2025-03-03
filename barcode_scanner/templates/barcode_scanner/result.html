@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Barcode Result</title>
+</head>
+<body>
+    <h2>Scanned Barcode Data</h2>
+    {% if barcode_data %}
+        <ul>
+            {% for data in barcode_data %}
+                <li>{{ data }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No barcode detected.</p>
+    {% endif %}
+    <a href="{% url 'scan_barcode' %}">Scan Another</a>
+</body>
+</html>
