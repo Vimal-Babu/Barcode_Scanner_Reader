@@ -1,0 +1,41 @@
+# Track only Python files and ignore others in diffs
+*.py linguist-detectable=true
+
+# Neglect HTML, CSS, JS, and other frontend files
+*.html linguist-vendored
+*.css linguist-vendored
+*.js linguist-vendored
+*.scss linguist-vendored
+*.ts linguist-vendored
+
+# Ignore images and media files from language stats
+*.png linguist-vendored
+*.jpg linguist-vendored
+*.jpeg linguist-vendored
+*.gif linguist-vendored
+*.svg linguist-vendored
+
+# Ignore environment and dependency files
+*.md linguist-vendored
+*.txt linguist-vendored
+*.json linguist-vendored
+*.lock linguist-vendored
+*.yml linguist-vendored
+*.yaml linguist-vendored
+
+# Ignore compiled and binary files
+*.pyc linguist-vendored
+*.pyo linguist-vendored
+*.exe linguist-vendored
+*.dll linguist-vendored
+*.so linguist-vendored
+*.dylib linguist-vendored
+
+# Ignore logs and database files
+*.log linguist-vendored
+*.db linguist-vendored
+*.sqlite3 linguist-vendored
+
+# Ignore Docker and CI/CD configs
+Dockerfile linguist-vendored
+*.sh linguist-vendored

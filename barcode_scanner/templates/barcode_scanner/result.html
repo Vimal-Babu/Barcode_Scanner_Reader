@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcode Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #444;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ff9a9e;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        p {
+            color: #666;
+            font-style: italic;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #ff758c;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s ease;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #ff5a7f;
+        }
+    </style>
 </head>
 <body>
-    <h2>Scanned Barcode Data</h2>
-    {% if barcode_data %}
-        <ul>
-            {% for data in barcode_data %}
-                <li>{{ data }}</li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No barcode detected.</p>
-    {% endif %}
-    <a href="{% url 'scan_barcode' %}">Scan Another</a>
+    <div class="container">
+        <h2>Scanned Barcode Data</h2>
+        {% if barcode_data %}
+            <ul>
+                {% for data in barcode_data %}
+                    <li>{{ data }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No barcode detected.</p>
+        {% endif %}
+        <a href="{% url 'scan_barcode' %}" class="btn">Scan Another</a>
+    </div>
 </body>
 </html>
