@@ -1,4 +1,4 @@
-# 📦 ParcelSort Project
+# 📦 Barcode Reader Project
 
 ParcelSort is a Django-based project designed to efficiently scan and process barcodes for parcel sorting. It includes a dedicated barcode scanning module.
 
