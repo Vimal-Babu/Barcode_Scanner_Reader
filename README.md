@@ -4,6 +4,7 @@ ParcelSort is a Django-based project designed to efficiently scan and process ba
 
 ## 🏗 Project Structure
 
+ParcelSort_Project/ │── barcodes/ # Stores scanned barcode images │── barcode_scanner/ # Django app for barcode scanning │── parcelsort/ # Main Django project directory │── venv/ # Virtual environment │── .gitattributes # Git attribute rules │── .gitignore # Ignored files for Git │── manage.py # Django management script │── requirements.txt # Project dependencies
 
 ## 🚀 Features
 
