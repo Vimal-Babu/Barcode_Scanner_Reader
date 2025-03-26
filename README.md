@@ -15,29 +15,32 @@ ParcelSort_Project/ │── barcodes/ # Stores scanned barcode images │─�
 
 ## ⚡ Installation
 
-1️⃣ **Clone the repository**  
+### 1️⃣ **Clone the repository** 
+Open a terminal and run:
 ```sh
 git clone https://github.com/your-username/ParcelSort_Project.git
 cd ParcelSort_Project
+```
 
-2️⃣ Create and activate a virtual environment
+### 2️⃣ Create and activate a virtual environment
 ```sh
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate     # On Windows
+```
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 ```sh
 pip install -r requrement.txt
-
-4️⃣ Apply migrations
+```
+### 4️⃣ Apply migrations
 ```sh
 python manage.py migrate
-
-5️⃣ Run the Django development server
+```
+### 5️⃣ Run the Django development server
 ```sh
 python manage.py runserver
-
+```
 
 🖼 Barcode Upload and Scan
 Navigate to http://127.0.0.1:8000/
